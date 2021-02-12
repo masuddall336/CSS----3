@@ -1,0 +1,179 @@
+.trabsform-1{
+    float:left;
+    display:inline-block;
+}
+.out-side{
+    background-color: blueviolet;
+    border:2px solid red;
+    margin-bottom:5px;
+    width:200px;
+    height:200px;
+
+}
+.in-side{
+    background-color: saddlebrown;
+    width:100%;
+    height:100%;
+    transform:scaley(80%);
+    transform: skew(-23deg);
+}
+.transform-2 .outer{
+    background-color: seagreen;
+    width:200px;
+    height:200px;
+   
+}
+.transform-2{
+    float: left;
+    margin-left: 313px;
+    margin-top: -615px;
+}
+.transform-2 .inner{
+    background: rgb(202, 189, 10);
+    width:100%;
+    height:100%;
+    transform: translatey(-5px) rotate(378deg);
+}
+.trangition{
+    width:150px;
+    height:150px;
+    border:3px solid red;
+    overflow: hidden;
+    margin-left:591px;
+    transition:background-color  2s cubic-bezier(1,.71,0,1.29);
+}
+.trangition:hover{
+    background-color:red;
+    border:3px solid green;
+}
+
+
+
+
+.cricket{
+    width:80%;
+    height:483px;
+    margin-top: 619px;
+    border: 8px solid #8ce904;
+    background-image:url("photos/grass-field.jpg");
+    background-size: 100%;
+    margin:600px auto   ;
+    animation-name: abdullah;
+}
+.animation{
+    width:50px;
+    height:50px;
+    background-color:red;
+}
+.cricket .bat{
+    transition:transform 0.2s ease;
+    width: 34%;
+}
+.cricket:hover .bat{
+    transform:rotate(-60deg);
+    transform-origin: 50% 0%;
+}
+.cricket .ball{
+    width:5%;
+    animation-name: ball;
+    margin-bottom: 304px;
+    margin-left: 140px;
+    transition:all .2s ease .2s;
+}
+.cricket:hover .ball{
+    transform:rotate(360deg);
+    margin-left:400px;
+    margin-bottom:400px;
+}
+.cricket p{
+    margin-top: -394px;
+    margin-left: 511px;
+    font-size: 5em;
+    opacity: 0;
+    transition: all 1s ease .2s;
+    
+}
+.cricket:hover p{
+    opacity: 100%;
+    color:crimson;
+    transform:rotate(360deg);
+}
+.animation{
+    width: 20px;
+    height: 10px;
+    background-color: green;
+    position: relative;
+    top: 600px;
+    left: 106px;
+    animation-name: around;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes around{
+   0%{left:125px;top:600px}
+   25%{left:1208px;top:600px;background-color:lightcoral;}
+   50%{left:1208px;top:1119px;background-color:lightskyblue;}
+   75%{left:105px;top:1119px;background-color:maroon;}
+   100%{left:105px;top:600px}
+}
+.flex-box-wrapper{
+    display:flex;
+    justify-content:space-around;
+}
+.flex-3{
+    flex:1;
+}
+.flex-box-wrapper .single-flex{
+    width:100px;
+    height:100px;
+    background-color: #b3d21e;
+    border: 3px solid rgb(15, 173, 179);
+    margin-bottom:5px;
+}
+.flex-box-wrapper2{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+}
+.flex-box-wrapper2 .single-flex{
+    width:100px;
+    height:100px;
+    background-color: #b3d21e;
+    border: 3px solid rgb(15, 173, 179);
+    margin-bottom:5px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap:20px;
+}
+.single-grid{
+    background-color: burlywood;
+    color:#fff;
+    border:1px solid green;
+    padding:20px;
+    font-weight:bold;
+}
+.grid-2{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap:50px;
+}
+.grid-2 .single-grid2{
+    border:2px solid red;
+}
+.clander ul{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-gap:20px;
+}
+.clander ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: cadetblue;
+    height:100px;
+    font-weight:bold;
+    font-size:3em;
+}
